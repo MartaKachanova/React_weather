@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./App.css";
 
 const api = {
-  key: "c7616da4b68205c2f3ae73df2c31d177",
-  base: "http://api.openweathermap.org/data/2.5/",
-};
+  key: '6f0cdf56c54d4fddba1893c317657fc9',
+  base: 'http://api.openweathermap.org/data/2.5/'
+}
 
 function App() {
   const [city, setCity] = useState("");
