@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import "./App.css";
 
-
+const api = {
+  key: "c7616da4b68205c2f3ae73df2c31d177",
+  base: "http://api.openweathermap.org/data/2.5/",
+};
 
 function App() {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState("");
-
-  const api = {
-    key: 'c7616da4b68205c2f3ae73df2c31d177',
-    base: 'http://api.openweathermap.org/data/2.5/'
-  }
 
   const search = (evt) => {
     if (evt.key === "Enter") {
@@ -54,7 +52,5 @@ function App() {
     </div>
   );
 }
-
-
 
 export default App;
